@@ -1,1 +1,13 @@
+syntax = "proto3";
 
+package enclavepooling_proto;
+
+import(
+
+"github.com/alibaba/inclavare-containers/blob/master/rune/libenclave/internal/runtime/pal/skeleton/arch.h"
+
+)
+
+service EnclaveGolbalID {
+    rpc  GetEnclaveGolbalID (EnclaverRequest) returns (GolbalIDResponse) {}
+}
