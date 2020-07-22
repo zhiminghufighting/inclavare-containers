@@ -11,3 +11,30 @@ import(
 service EnclaveGolbalID {
     rpc  GetEnclaveGolbalID (EnclaverRequest) returns (GolbalIDResponse) {}
 }
+
+service EnclaveAttribute {
+
+}
+
+service EnclaveTCS {
+
+}
+
+
+service EnclaveSIGSTRUCT {
+
+}
+
+service EnclaveTargetInfo {
+
+}
+
+service EnclaveEToken {
+
+}
+
+service EnclaveEReport {
+
+}
+
+
