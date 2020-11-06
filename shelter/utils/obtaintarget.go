@@ -40,13 +40,13 @@ func ExecShell(cmdstring string)(retstr string, ret bool){
 
 	if err := cmd.Wait(); err != nil {
 		fmt.Errorf("exec bash cmd.Wait %s with error %s.\n", cmdstring, err)
-		return "", false			
+		return "", false
 	}
 
 	return rstr, true
 }
 
-//precheck the if git is ready
+//precheck if git is ready
 func CheckGit()(bool){
 	cmd_string := "git version"
 	if _, ret := ExecShell(cmd_string); ret != true {
